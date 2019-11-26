@@ -2,7 +2,7 @@
 <html xmlns:ng="http://angularjs.org" ng-app="exampleApp">
 <head>
     <meta charset="utf-8">
-    <title>BetConstruct login example</title>
+    <title>MATRiX login</title>
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-cookies.min.js"></script>
@@ -33,7 +33,6 @@
             "currency_name": "USD"
         };
         $scope.register = function register () {
-
             Zergling.get({user_info: $scope.userInfo}, 'register_user').then(
                     function (data) {
                         console.log('registration response:', data);
@@ -63,12 +62,11 @@
             );
         };
     }]);
-
 </script>
 
     <div ng-controller="regCtrl" ng-init="loginName='test8888'; password='Testik8888'">
         <h1>
-            This example shows the basic registration process.
+            MATRiX
         </h1>
         <form ng-hide="loggedIn">
             <ul>
@@ -127,7 +125,7 @@
                     <label for="currency_name">Currency</label>
                     <select name="currency_name" id="currency_name" ng-model="userInfo.currency_name">
                         <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
+                        <option value="MMK">MMK</option>
                     </select>
                 </li>
                 <li>
@@ -138,7 +136,7 @@
                         <option value="fre">French</option>
                         <option value="cze">Czech</option>
                         <option value="kor">Korean</option>
-                        <option value="rus">Russian</option>
+                        <option value="my">Myanmar</option>
                         <option value="chi">Chinese</option>
                     </select>
                 </li>
